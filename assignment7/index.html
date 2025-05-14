@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment java script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formdata">
+        <textarea id="message" rows="10" cols="100" placeholder="Enter your content"></textarea>
+    </div>
+     <p id="para"></p>
+
+
+    <script>
+          let newtarget=document.getElementById("message");
+          
+          newtarget.addEventListener('input',()=>
+        {
+            
+            let target=document.getElementById("message").value;
+            let result=document.getElementById("para");
+
+          const ans = target.split('').reverse().join('');
+            result.innerHTML=ans;
+      
+        })
+
+       
+        
+
+    </script>
+</body>
+</html>

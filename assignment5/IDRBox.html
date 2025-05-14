@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open/Close Div Example</title>
+  <link rel="stylesheet" href="IDRBox.css">
+</head>
+<body>
+
+  <button id="openBtn">Open </button>
+  
+
+  <div id="main">
+    This is a toggleable div.
+    <button id="closeBtn">Close </button>
+  </div>
+
+  <script>
+    
+    let openBtn = document.getElementById('openBtn');
+    let closeBtn = document.getElementById('closeBtn');
+    let myDiv = document.getElementById('main');
+
+    openBtn.addEventListener('click', () => {
+      main.style.display = "block";
+    });
+
+    closeBtn.addEventListener('click', () => {
+      main.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>

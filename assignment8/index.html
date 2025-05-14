@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div class="formdata">
+        <input type="text" placeholder="Enter your number" id="input">
+
+        <button onclick="adddata()">Add To Array</button>
+
+        <select name="sortOrder" id="sortOrder">
+            <option value="" disabled selected>Select Order</option>
+            <option value="asc" >Ascending</option>
+            <option value="desc" >Descending</option>
+        </select>
+        <button onclick="sortArray()">Sort Array</button>
+
+        <div id="result">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let arr=[]
+        function adddata()
+        {
+            let input=document.getElementById("input");
+            let inputdata=input.value;
+
+            arr.push(inputdata);
+              inputdata='';
+            console.log(arr);
+            input.value="";
+        }
+
+     function sortArray() {
+      const order = document.getElementById("sortOrder").value;
+
+      if (order === "asc") {
+        arr.sort((a, b) => a - b);
+      } else if (order === "desc") {
+        arr.sort((a, b) => b - a);
+      } else {
+        alert("Please select a sort order.");
+        return;
+      }
+
+      displayArray(arr);
+    }
+
+      
+    function displayArray(array) {
+      document.getElementById("result").innerHTML = array.join(", ");
+    }
+        
+        </script>
+</body>
+</html>

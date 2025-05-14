@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+</head>
+
+<body>
+
+    <input type="text" id="emailInput" placeholder="Enter your email">
+    <button id="btn1">Get Domain</button>
+    <p id="result"></p>
+
+    <script>
+        
+        let button = document.getElementById("btn1");
+        button = addEventListener("click",()=>
+        {
+            let email = document.getElementById("emailInput").value;
+            if (email.includes("@")) {
+                let domainPart = email.split("@")[1];
+                let domainName = domainPart.substring(0,domainPart.lastIndexOf("."));
+                document.getElementById("result").innerText = domainName;
+                
+            }
+        })
+    </script>
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
