@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create element</title>
+</head>
+<body>
+    
+    <button id="one">Click me!</button>
+    <div id="mydiv"></div>
+
+    <script>
+
+        let btn = document.getElementById("one");
+        btn.addEventListener("click",()=>{
+            let element = document.createElement("p");
+            let content = document.createTextNode("my name is akash singh shekhawat");
+            console.log(element);
+            // console.log(content);
+            element.append(content)
+            mydiv.append(element)
+           
+        })
+
+            
+
+        
+        
+
+
+
+    </script>
+</body>
+</html>

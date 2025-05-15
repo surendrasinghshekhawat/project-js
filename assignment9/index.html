@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+
+
+    <div class="parent">
+        <h1>Js Create Element Demo</h1>
+          <button id="btn">+Add Input</button>
+        <input type="text" placeholder="Enter your message" id="inp">
+        <div id="container"></div>
+
+    </div>
+
+    <script>
+
+        
+    let count = 0;
+    let button = document.getElementById("btn");
+    let inputField = document.getElementById("inp");
+    let container = document.getElementById("container");
+
+    button.addEventListener("click", () => {
+      let inputText = inputField.value.trim();
+      if (count < 4) {
+        let hulk = document.createElement("input");
+        hulk.placeholder="Enter your message "
+        hulk.textContent = inputText;
+        container.appendChild(hulk);
+        count++;
+        inputField.value = ""; 
+      } else {
+        alert("You have used all the inputs:5");
+      }
+    });
+  </script>
+
+
+
+
+    </script>
+
+</body>
+
+</html>

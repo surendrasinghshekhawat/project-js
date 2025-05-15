@@ -1,0 +1,41 @@
+.parent {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px #ccc;
+    padding: 50px;
+}
+#btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#btn:hover {
+    background-color: darkgray;
+}
+#container {
+    margin-top: 20px;
+    font-size: 15px;
+    color: steelblue;
+}
+#container input {
+    width: 80%;
+    padding: 15px 20px 15px 25px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+}
+
+#inp {
+    width: 80%;
+    padding: 15px 20px 15px 25px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}

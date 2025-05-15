@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>as1</title>
+</head>
+
+<body>
+
+    <input type="text" id="title" placeholder="Enter your number">
+    <button id="one">Add to array</button>
+    <button id="two">Print to array</button>
+    <div id="mydiv"></div>
+
+
+    <script>
+
+        let arr = [];
+        let btn1 = document.getElementById("one");
+        btn1.addEventListener("click", () => {
+            let result = document.getElementById("title").value;
+            arr.push(result)
+            console.log(arr);
+            document.getElementById("title").value = "";
+        })
+
+        let btn2 = document.getElementById("two");
+        btn2.addEventListener("click", () => {
+            let resultDiv = document.getElementById("mydiv");
+            resultDiv.innerText = arr;
+
+        })
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

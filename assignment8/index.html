@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +6,8 @@
     <title>Dom</title>
 </head>
 <body>
-    <div class="formdata">
-        <input type="text" placeholder="Enter your number" id="input">
 
+        <input type="text" placeholder="Enter your number" id="input">
         <button onclick="adddata()">Add To Array</button>
 
         <select name="sortOrder" id="sortOrder">
@@ -23,10 +21,8 @@
 
         </div>
 
-    </div>
 
     <script>
-
         let arr=[]
         function adddata()
         {
@@ -50,11 +46,8 @@
         alert("Please select a sort order.");
         return;
       }
-
       displayArray(arr);
     }
-
-      
     function displayArray(array) {
       document.getElementById("result").innerHTML = array.join(", ");
     }
